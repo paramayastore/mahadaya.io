@@ -1,0 +1,248 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.4em;
+    color: #007BFF;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+}
+
+.features li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.features li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Large Photo Section */
+.large-photo img {
+    width: 100%; /* Memenuhi lebar kontainer */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 5px; /* Sudut membulat */
+    margin-bottom: 20px; /* Spasi di bawah gambar besar */
+}
+
+/* Photo Section (4 photos) */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    gap: 10px; /* Jarak antar foto */
+    margin-bottom: 20px; /* Spasi di bawah galeri foto */
+}
+
+.photo img {
+    width: 100%; /* Mengisi lebar kontainer */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+/* Benefits Section */
+.benefits p, .offer p {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.offer p strong {
+    color: #007BFF;
+}
+
+.offer p {
+    white-space: pre-line; /* Mempertahankan pemformatan baris */
+}
+
+.price-original {
+    color: red;
+    text-decoration: line-through;
+}
+
+.price-special {
+    font-size: 3.5em; /* Lebih besar */
+    color: blue; /* Warna biru */
+    animation: blink-blue 1s steps(5, start) infinite; /* Efek blinking */
+}
+
+@keyframes blink-blue {
+    0%, 100% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.testimonials h2 {
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.testimonial:last-child {
+    margin-bottom: 0;
+}
+
+.testimonial .customer-photo {
+    flex: 0 0 30px; /* Ukuran foto pelanggan 30x30 */
+    margin-right: 10px;
+}
+
+.testimonial .customer-photo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial .product-photo {
+    flex: 0 0 80px; /* Ukuran foto produk 80x80 */
+    margin-left: 10px;
+}
+
+.testimonial .product-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.testimonial .testimonial-content {
+    flex: 1; /* Mengisi ruang yang tersisa */
+}
+
+.testimonial .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial blockquote {
+    border-left: none; /* Menghilangkan garis biru */
+    padding-left: 10px;
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center; /* Pastikan teks dan konten di tengah */
+    margin: 20px 0;
+}
+
+.arrow-gif {
+    width: 319px; /* Ukuran sesuai yang diminta */
+    height: 168px;
+    margin: 10px auto; /* Menggunakan auto untuk margin kiri dan kanan */
+    display: block; /* Pastikan ini menjadi blok untuk mengambil lebar penuh */
+}
+
+.btn-pesan {
+    display: inline-block;
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em; /* Ukuran teks lebih besar */
+    width: 100%;
+    text-align: center;
+    animation: blink-text 1s steps(5, start) infinite; /* Efek blinking pada teks */
+    border: none; /* Menghilangkan border */
+}
+
+@keyframes blink-text {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: red; /* Warna teks menjadi merah saat berkedip */
+    }
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
